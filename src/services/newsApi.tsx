@@ -11,3 +11,14 @@ export async function fetchNews(limit?: number) {
     console.log(error);
   }
 }
+
+export async function getNewsDetails(newsId?: string) {
+  try {
+    const { data } = await axios.get(
+      `${BASE_URL}/${newsId}`
+    );
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}

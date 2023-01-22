@@ -1,1 +1,15 @@
 
+
+  .imageBox {
+    height: 217px;
+    
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  img {
+    width: 400px;
+   
+  }
+
+ 

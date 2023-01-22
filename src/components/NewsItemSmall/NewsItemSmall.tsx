@@ -2,18 +2,20 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import s from './NewsItemSmall.module.css';
 import { ReactComponent as Calendar } from '../../assets/svg/calendar.svg';
-import dateFormat, { masks } from "dateformat";
+import dateFormat from "dateformat";
 
 type Props = {
   img?: string,
-  title?: string,
+  title?: JSX.Element | string,
   date?: string,
-  description?: string,
+  description?: JSX.Element | string,
   id?: number,
+  key?: number,
+  alt?: string,
 }
 
 
-export default function NewsItemSmall({ img, title, date, description, id }: Props) {
+export default function NewsItemSmall({ img, title, date, description, id, alt }: Props) {
 
   const location = useLocation();
 
@@ -21,7 +23,9 @@ export default function NewsItemSmall({ img, title, date, description, id }: Pro
 
   return (
     <li key={id} className={s.bebe}>
-      <img src={img} alt={title} className={s.image} />
+      <div className={s.imageBox}>
+        <img src={img} alt={alt} className={s.image} />
+      </div>
       <div className={s.bebe}>
         <Calendar />
         <p>{newDate}</p>

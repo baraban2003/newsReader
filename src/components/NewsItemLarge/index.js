@@ -1,1 +1,1 @@
-export { default } from './NewsItemLarge.tsx';
+export { default } from './NewsItemLarge.js';

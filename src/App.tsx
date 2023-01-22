@@ -17,8 +17,7 @@ const App = () => {
           }
         />
 
-        <Route
-          path="/:id/*"
+        <Route path="/:id/*"
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <NewsItemLarge />

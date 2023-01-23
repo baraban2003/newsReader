@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/newsReader/static/css/main.91316038.css",
-    "main.js": "/newsReader/static/js/main.ac8d9505.js",
-    "static/css/710.a1e44759.chunk.css": "/newsReader/static/css/710.a1e44759.chunk.css",
-    "static/js/710.c52b156e.chunk.js": "/newsReader/static/js/710.c52b156e.chunk.js",
-    "static/js/637.52c73cb3.chunk.js": "/newsReader/static/js/637.52c73cb3.chunk.js",
-    "index.html": "/newsReader/index.html",
+    "main.css": "/newsReader/static/css/main.a12d9cda.css",
+    "main.js": "/newsReader/static/js/main.73940cc7.js",
+    "static/css/710.c3e51c36.chunk.css": "/newsReader/static/css/710.c3e51c36.chunk.css",
+    "static/js/710.293cd30e.chunk.js": "/newsReader/static/js/710.293cd30e.chunk.js",
+    "static/js/863.a45c014d.chunk.js": "/newsReader/static/js/863.a45c014d.chunk.js",
     "static/media/calendar.svg": "/newsReader/static/media/calendar.23d40ea0b0f66db921d8f647039ab1fc.svg",
-    "main.91316038.css.map": "/newsReader/static/css/main.91316038.css.map",
-    "main.ac8d9505.js.map": "/newsReader/static/js/main.ac8d9505.js.map",
-    "710.a1e44759.chunk.css.map": "/newsReader/static/css/710.a1e44759.chunk.css.map",
-    "710.c52b156e.chunk.js.map": "/newsReader/static/js/710.c52b156e.chunk.js.map",
-    "637.52c73cb3.chunk.js.map": "/newsReader/static/js/637.52c73cb3.chunk.js.map"
+    "index.html": "/newsReader/index.html",
+    "static/media/icon-search.svg": "/newsReader/static/media/icon-search.fdb810a43800241751a2.svg",
+    "main.a12d9cda.css.map": "/newsReader/static/css/main.a12d9cda.css.map",
+    "main.73940cc7.js.map": "/newsReader/static/js/main.73940cc7.js.map",
+    "710.c3e51c36.chunk.css.map": "/newsReader/static/css/710.c3e51c36.chunk.css.map",
+    "710.293cd30e.chunk.js.map": "/newsReader/static/js/710.293cd30e.chunk.js.map",
+    "863.a45c014d.chunk.js.map": "/newsReader/static/js/863.a45c014d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91316038.css",
-    "static/js/main.ac8d9505.js"
+    "static/css/main.a12d9cda.css",
+    "static/js/main.73940cc7.js"
   ]
 }

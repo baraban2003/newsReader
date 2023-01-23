@@ -1,4 +1,4 @@
-import InputUnstyled from '@mui/base/InputUnstyled';
+
 import s from './SearchForm.module.css';
 
 type Props = {
@@ -13,16 +13,16 @@ export default function SearchForm({ handleMoviesSubmit }: Props) {
   };
 
   return (
-
-    <InputUnstyled
-      className={s.input}
-      type="text"
-      autoComplete="off"
-      autoFocus
-      placeholder="Search news"
-      /* value={news} */
-      onChange={handleSearchRequest}
-    />
+    <>
+      <p className={s.filter}>Filter by keywords</p>
+      <input
+        className={s.input}
+        type="text"
+        autoComplete="off"
+        autoFocus
+        placeholder="Filter news"
+        onChange={handleSearchRequest} />
+    </>
 
   );
 }

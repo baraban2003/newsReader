@@ -19,14 +19,20 @@ export default function NewsItemLarge() {
 
 
   return (
-    <>
-      <img src={news?.imageUrl} alt={news?.title} className={s.image} />
-      <h1>{news?.title}</h1>
-      <p>{news?.summary}</p>
-      <Link to={'/'}>
+    <div className={s.largeBlock}>
+      <div className={s.imageBox}>
+        <img className={s.img} src={news?.imageUrl} alt={news?.title} />
+      </div>
+      <div className={s.textBlock}>
+        <div className={s.textBlockSettings}>
+          <h1 className={s.title} >{news?.title}</h1>
+          <p className={s.text} >{news?.summary}</p>
+        </div>
+      </div>
+      <Link className={s.link} to={'/'}>
         &#8592; Back to homepage
       </Link>
-    </>
+    </div>
 
   );
 }

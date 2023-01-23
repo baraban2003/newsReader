@@ -8,6 +8,9 @@ type Props = {
 export default function ResultCounter({ count }: Props) {
 
   return (
-    <p className={s.counter}>Results: {count}</p>
+    <>
+      <p className={s.counter}>Results: {count}</p>
+      <hr />
+    </>
   );
 }

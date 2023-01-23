@@ -26,18 +26,24 @@ export default function NewsItemSmall({ img, title, date, description, id, alt }
       <div className={s.imageBox}>
         <img src={img} alt={alt} className={s.image} />
       </div>
-      <div className={s.bebe}>
-        <Calendar />
-        <p>{newDate}</p>
+      <div className={s.textBlock}>
+        <div className={s.articleTitle}>
+          <div className={s.date}>
+            <Calendar />
+            <p className={s.dateText}>{newDate}</p>
+          </div>
+
+          <h2 className={s.title}>{title}</h2>
+          <p className={s.description}>{description}</p>
+        </div>
+        <Link
+          className={s.link}
+          to={{ pathname: `/${id}` }}
+          state={{ from: location.pathname }}
+        >
+          Read more &#8594;
+        </Link>
       </div>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Link
-        to={{ pathname: `/${id}` }}
-        state={{ from: location.pathname }}
-      >
-        Read more &#8594;
-      </Link>
     </li>
   );
 }

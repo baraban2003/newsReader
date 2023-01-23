@@ -1,1 +1,64 @@
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #363636;
+    margin-left: 75px;
+}
 
+
+
+.imageBox {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.img {
+    width: 100%;
+}
+
+.textBlock {
+    background-color: fff;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 35px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+.textBlockSettings {
+    padding: 35px 75px 50px 75px;
+}
+
+.title {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #363636;
+}
+
+.text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+}

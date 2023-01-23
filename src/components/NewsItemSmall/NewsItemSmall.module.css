@@ -1,11 +1,33 @@
 .imageBox {
   height: 217px;
-
   object-fit: contain;
   overflow: hidden;
 }
 
+.textBlock {
+  height: 263px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: space-between;
+  margin: 0;
+  padding: 25px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363636;
+}
+
 .li {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-bottom: 45px;
   width: 400px;
   height: 530px;
   break-inside: avoid;
@@ -13,4 +35,39 @@
 
 img {
   width: 400px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.dateText {
+  margin: 0 0 0 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #363636;
+  opacity: 0.6;
+}
+
+.title {
+  height: 58px;
+  overflow: hidden;
+
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 25px 0 20px 0;
+  color: #363636;
+}
+
+.description {
+  margin: 0 0 20px 0;
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 100ch;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }

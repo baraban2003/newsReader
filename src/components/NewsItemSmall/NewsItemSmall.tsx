@@ -22,7 +22,7 @@ export default function NewsItemSmall({ img, title, date, description, id, alt }
   const newDate = dateFormat(date, "mmmm dS, yyyy");
 
   return (
-    <li key={id} className={s.bebe}>
+    <li key={id} className={s.li}>
       <div className={s.imageBox}>
         <img src={img} alt={alt} className={s.image} />
       </div>

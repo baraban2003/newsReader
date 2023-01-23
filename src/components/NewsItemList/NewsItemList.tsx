@@ -59,9 +59,9 @@ export default function NewsItemList() {
         count={news.filter(filterData).length}
       />
 
-      <ul>
+      <ul className={s.list}>
         {news.filter(filterData).map((e: { id: number, title: string, imageUrl: string, updatedAt: string, summary: string }) => (
-          <div key={e.id}>
+          <div key={e.id} className={s.listItem}>
             <NewsItemSmall
               key={e.id}
               id={e.id}

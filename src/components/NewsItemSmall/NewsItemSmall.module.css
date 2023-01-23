@@ -1,15 +1,16 @@
+.imageBox {
+  height: 217px;
 
+  object-fit: contain;
+  overflow: hidden;
+}
 
-  .imageBox {
-    height: 217px;
-    
-    object-fit: contain;
-    overflow: hidden;
-  }
+.li {
+  width: 400px;
+  height: 530px;
+  break-inside: avoid;
+}
 
-  img {
-    width: 400px;
-   
-  }
-
- 
+img {
+  width: 400px;
+}

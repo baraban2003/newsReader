@@ -1,1 +1,7 @@
+.list {
+    columns: 3 400px;
+    column-gap: 45px;
 
+}
+
+.listItem {}

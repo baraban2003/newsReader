@@ -8,6 +8,6 @@ type Props = {
 export default function ResultCounter({ count }: Props) {
 
   return (
-    <p>Results: {count}</p>
+    <p className={s.counter}>Results: {count}</p>
   );
 }

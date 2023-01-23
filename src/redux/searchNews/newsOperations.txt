@@ -1,0 +1,37 @@
+import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
+const BASE_URL = 'https://api.spaceflightnewsapi.net/v3/articles';
+
+// GET News
+const fetchNews = createAsyncThunk(
+  'news/getNews',
+  async (limit?: number) => {
+    try {
+      const { data } = await axios.get(`${BASE_URL}?_limit=${limit}`);
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+)
+
+//Get one
+const getNewsDetails = createAsyncThunk(
+  'balance/getNewsDetails',
+  async (newsId?: string) => {
+    try {
+      const { data } = await axios.get(
+        `${BASE_URL}/${newsId}`
+      );
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
+const newsOperations = {
+  fetchNews,
+  getNewsDetails,
+};
+export default newsOperations;

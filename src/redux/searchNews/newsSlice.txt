@@ -1,0 +1,22 @@
+import { createSlice } from '@reduxjs/toolkit';
+import newsOperations from './newsOperations';
+
+const initialState = {
+  page: null,
+};
+
+const initialPageSlice = createSlice({
+  name: 'news',
+  initialState,
+  extraReducers: {
+    [newsOperations.fetchNews.fulfilled.toString()](state: { page: any; }, action: { payload: any; }) {
+      state.page = action.payload;
+    },
+    [newsOperations.getNewsDetails.fulfilled.toString()](state: { page: any; }, action: { payload: any; }) {
+      state.page = action.payload;
+    },
+  },
+
+});
+
+export default initialPageSlice.reducer;
